@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: lineorder_flat
+    description: This model build clickhouse starschema.
+    docs:
+      show: true
+    columns:
+      - name: LO_CUSTKEY
+        tests:
+          - not_null
+      - name: LO_REVENUE
+        tests:
+          - not_null
+        
+        
+

@@ -1,0 +1,13 @@
+clickhouse_starschema:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: homework_db
+      port: 8443
+      user: dis
+      host: 'c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net'
+      password: otuseducation
+      verify: False
+      secure: True
+      connect_timeout: 600
