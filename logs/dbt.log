@@ -22753,3 +22753,135 @@ select
 15:28:04.936582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20275d37f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20253037c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2025303dc0>]}
 15:28:05.415700 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
 15:28:05.416177 [debug] [MainThread]: Connection 'homework_db' was properly closed.
+
+
+============================== 2022-06-14 06:35:44.515311 | 924496bc-7a71-46bb-b109-a1295eeaa303 ==============================
+06:35:44.515324 [info ] [MainThread]: Running with dbt=1.1.0
+06:35:44.541483 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+06:35:44.541631 [debug] [MainThread]: Tracking: tracking
+06:35:44.551978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe232cb6eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe232cb6df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe232cb6e20>]}
+06:35:44.919931 [debug] [MainThread]: Executing "git --help"
+06:35:44.923554 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+06:35:44.923947 [debug] [MainThread]: STDERR: "b''"
+06:35:44.931461 [debug] [MainThread]: Acquiring new clickhouse connection "debug"
+06:35:44.931879 [debug] [MainThread]: Opening a new connection, currently in state init
+06:35:44.976032 [debug] [MainThread]: clickhouse adapter: On debug: select 1 as id...
+06:35:44.979945 [debug] [MainThread]: clickhouse adapter: SQL status: OK in 0.00 seconds
+06:35:44.981048 [debug] [MainThread]: On debug: Close
+06:35:44.981407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe232bdbfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe232b97070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe232b97160>]}
+06:35:45.568351 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-06-14 06:35:53.799725 | c1146b20-5c6c-4a81-8bc5-3154ed65e9ca ==============================
+06:35:53.799744 [info ] [MainThread]: Running with dbt=1.1.0
+06:35:53.800221 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+06:35:53.800425 [debug] [MainThread]: Tracking: tracking
+06:35:53.809734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10d897c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10d89820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10d89850>]}
+06:35:54.197209 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+06:35:54.197474 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+06:35:54.205795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1146b20-5c6c-4a81-8bc5-3154ed65e9ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10bd2790>]}
+06:35:54.234251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1146b20-5c6c-4a81-8bc5-3154ed65e9ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10bb60d0>]}
+06:35:54.234655 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 410 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+06:35:54.234943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1146b20-5c6c-4a81-8bc5-3154ed65e9ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10bb6340>]}
+06:35:54.236453 [info ] [MainThread]: 
+06:35:54.237044 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+06:35:54.238065 [debug] [ThreadPool]: Acquiring new clickhouse connection "list_None_homework_db"
+06:35:54.248194 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:35:54.292514 [debug] [ThreadPool]: clickhouse adapter: On list_None_homework_db: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "list_None_homework_db"} */
+select
+      null as db,
+      name as name,
+      database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type
+    from system.tables as t
+    where schema = 'homework_db'
+  ...
+06:35:54.296412 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.00 seconds
+06:35:54.297894 [debug] [ThreadPool]: On list_None_homework_db: Close
+06:35:54.298583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1146b20-5c6c-4a81-8bc5-3154ed65e9ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10d312b0>]}
+06:35:54.299111 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+06:35:54.299402 [info ] [MainThread]: 
+06:35:54.307813 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+06:35:54.308040 [info ] [Thread-1  ]: 1 of 2 START test not_null_lineorder_flat_LO_CUSTKEY ........................... [RUN]
+06:35:54.308501 [debug] [Thread-1  ]: Acquiring new clickhouse connection "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"
+06:35:54.308795 [debug] [Thread-1  ]: Began compiling node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+06:35:54.308979 [debug] [Thread-1  ]: Compiling test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+06:35:54.322045 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"
+06:35:54.322507 [debug] [Thread-1  ]: finished collecting timing info
+06:35:54.322709 [debug] [Thread-1  ]: Began executing node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+06:35:54.337264 [debug] [Thread-1  ]: Writing runtime SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"
+06:35:54.337778 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+06:35:54.347564 [debug] [Thread-1  ]: clickhouse adapter: On test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select LO_CUSTKEY
+from homework_db.lineorder_flat
+where LO_CUSTKEY is null
+
+
+
+      
+    ) as dbt_internal_test...
+06:35:54.353215 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:35:54.355201 [debug] [Thread-1  ]: finished collecting timing info
+06:35:54.355400 [debug] [Thread-1  ]: On test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647: Close
+06:35:54.355720 [info ] [Thread-1  ]: 1 of 2 PASS not_null_lineorder_flat_LO_CUSTKEY ................................. [[32mPASS[0m in 0.05s]
+06:35:54.356121 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+06:35:54.356357 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+06:35:54.356669 [info ] [Thread-1  ]: 2 of 2 START test not_null_lineorder_flat_LO_REVENUE ........................... [RUN]
+06:35:54.357088 [debug] [Thread-1  ]: Acquiring new clickhouse connection "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"
+06:35:54.357297 [debug] [Thread-1  ]: Began compiling node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+06:35:54.357490 [debug] [Thread-1  ]: Compiling test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+06:35:54.361394 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"
+06:35:54.361802 [debug] [Thread-1  ]: finished collecting timing info
+06:35:54.361992 [debug] [Thread-1  ]: Began executing node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+06:35:54.364625 [debug] [Thread-1  ]: Writing runtime SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"
+06:35:54.364998 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+06:35:54.374118 [debug] [Thread-1  ]: clickhouse adapter: On test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select LO_REVENUE
+from homework_db.lineorder_flat
+where LO_REVENUE is null
+
+
+
+      
+    ) as dbt_internal_test...
+06:35:54.379509 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:35:54.380814 [debug] [Thread-1  ]: finished collecting timing info
+06:35:54.381018 [debug] [Thread-1  ]: On test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854: Close
+06:35:54.381350 [info ] [Thread-1  ]: 2 of 2 PASS not_null_lineorder_flat_LO_REVENUE ................................. [[32mPASS[0m in 0.02s]
+06:35:54.381776 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+06:35:54.382858 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+06:35:54.383178 [info ] [MainThread]: 
+06:35:54.383482 [info ] [MainThread]: Finished running 2 tests in 0.15s.
+06:35:54.383821 [debug] [MainThread]: Connection 'master' was properly closed.
+06:35:54.383989 [debug] [MainThread]: Connection 'test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854' was properly closed.
+06:35:54.392991 [info ] [MainThread]: 
+06:35:54.393253 [info ] [MainThread]: [32mCompleted successfully[0m
+06:35:54.393605 [info ] [MainThread]: 
+06:35:54.393897 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+06:35:54.394295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10bb6370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10bb6430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10bb6190>]}
