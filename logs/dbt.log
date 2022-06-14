@@ -22885,3 +22885,1761 @@ where LO_REVENUE is null
 06:35:54.393605 [info ] [MainThread]: 
 06:35:54.393897 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 06:35:54.394295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10bb6370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10bb6430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a10bb6190>]}
+
+
+============================== 2022-06-14 06:50:01.817991 | 75502c2c-f7db-4edc-b7ab-ee70a78d2009 ==============================
+06:50:01.818006 [info ] [MainThread]: Running with dbt=1.1.0
+06:50:01.818412 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'clean', 'indirect_selection': 'eager'}
+06:50:01.818598 [debug] [MainThread]: Tracking: tracking
+06:50:01.827697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f251a4dd070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f251a4dd130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f251a4dd160>]}
+06:50:01.829574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f251a4dd370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f251a4dd280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f251a4dd160>]}
+
+
+============================== 2022-06-14 06:52:13.090496 | 61723904-883d-451a-8037-7b397ed5daab ==============================
+06:52:13.090516 [info ] [MainThread]: Running with dbt=1.1.0
+06:52:13.091048 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+06:52:13.091282 [debug] [MainThread]: Tracking: tracking
+06:52:13.100586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab9896d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab989730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab989760>]}
+06:52:13.126474 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+06:52:13.126837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '61723904-883d-451a-8037-7b397ed5daab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab939df0>]}
+06:52:13.164285 [debug] [MainThread]: Parsing macros/init_s3_source.sql
+06:52:13.168307 [debug] [MainThread]: Parsing macros/catalog.sql
+06:52:13.169934 [debug] [MainThread]: Parsing macros/adapters.sql
+06:52:13.204862 [debug] [MainThread]: Parsing macros/schema_tests/relationships.sql
+06:52:13.205944 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+06:52:13.232671 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+06:52:13.236476 [debug] [MainThread]: Parsing macros/materializations/test.sql
+06:52:13.237652 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+06:52:13.264499 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+06:52:13.267046 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+06:52:13.268544 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+06:52:13.270066 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+06:52:13.271429 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+06:52:13.272121 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+06:52:13.272917 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+06:52:13.273919 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+06:52:13.282454 [debug] [MainThread]: Parsing macros/etc/statement.sql
+06:52:13.286887 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+06:52:13.291051 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+06:52:13.293840 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+06:52:13.300920 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+06:52:13.303565 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+06:52:13.312904 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+06:52:13.322058 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+06:52:13.324279 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+06:52:13.328166 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+06:52:13.330563 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+06:52:13.346836 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+06:52:13.352986 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+06:52:13.354390 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+06:52:13.361126 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+06:52:13.363735 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+06:52:13.365944 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+06:52:13.368776 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+06:52:13.376218 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+06:52:13.377752 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+06:52:13.387736 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+06:52:13.403651 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+06:52:13.418602 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+06:52:13.423081 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+06:52:13.435723 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+06:52:13.446508 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+06:52:13.448278 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+06:52:13.464641 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+06:52:13.466588 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+06:52:13.471033 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+06:52:13.472868 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+06:52:13.475875 [debug] [MainThread]: Parsing macros/generate_model_yaml.sql
+06:52:13.479137 [debug] [MainThread]: Parsing macros/generate_source.sql
+06:52:13.486362 [debug] [MainThread]: Parsing macros/generate_base_model.sql
+06:52:13.489307 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
+06:52:13.490638 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
+06:52:13.492057 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
+06:52:13.497835 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
+06:52:13.501301 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
+06:52:13.511072 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
+06:52:13.516030 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
+06:52:13.517328 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
+06:52:13.518948 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
+06:52:13.520392 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
+06:52:13.521395 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
+06:52:13.522929 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
+06:52:13.524928 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
+06:52:13.526954 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
+06:52:13.528485 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+06:52:13.529444 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
+06:52:13.530611 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+06:52:13.531658 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+06:52:13.534955 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+06:52:13.536516 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
+06:52:13.539351 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
+06:52:13.540315 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
+06:52:13.542487 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+06:52:13.548234 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
+06:52:13.549545 [debug] [MainThread]: Parsing macros/cross_db_utils/listagg.sql
+06:52:13.558179 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
+06:52:13.559954 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+06:52:13.561142 [debug] [MainThread]: Parsing macros/generic_tests/test_unique_where.sql
+06:52:13.562503 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+06:52:13.563711 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+06:52:13.566452 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+06:52:13.568622 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+06:52:13.571064 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+06:52:13.575067 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+06:52:13.577033 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+06:52:13.578660 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+06:52:13.580716 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+06:52:13.582354 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+06:52:13.590749 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+06:52:13.592914 [debug] [MainThread]: Parsing macros/generic_tests/test_not_null_where.sql
+06:52:13.594332 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+06:52:13.597120 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+06:52:13.598853 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+06:52:13.600647 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+06:52:13.601930 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+06:52:13.603185 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+06:52:13.604306 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+06:52:13.605466 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+06:52:13.607790 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+06:52:13.609357 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+06:52:13.617284 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+06:52:13.622970 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+06:52:13.629918 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+06:52:13.631611 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+06:52:13.634908 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+06:52:13.636478 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+06:52:13.640753 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+06:52:13.646592 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+06:52:13.647948 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+06:52:13.654194 [debug] [MainThread]: Parsing macros/sql/star.sql
+06:52:13.657528 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+06:52:13.660880 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+06:52:13.663623 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+06:52:13.668036 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+06:52:13.669716 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+06:52:13.673850 [debug] [MainThread]: Parsing macros/sql/union.sql
+06:52:13.684887 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+06:52:13.688520 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+06:52:13.690284 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
+06:52:13.714922 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+06:52:13.717136 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+06:52:13.718818 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+06:52:14.087149 [debug] [MainThread]: 1603: static parser failed on lineorder_flat.sql
+06:52:14.145491 [debug] [MainThread]: 1602: parser fallback to jinja rendering on lineorder_flat.sql
+06:52:14.264359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61723904-883d-451a-8037-7b397ed5daab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab9d8100>]}
+06:52:14.273681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61723904-883d-451a-8037-7b397ed5daab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab9adb80>]}
+06:52:14.274063 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 410 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+06:52:14.274319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61723904-883d-451a-8037-7b397ed5daab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab965eb0>]}
+06:52:14.275718 [info ] [MainThread]: 
+06:52:14.276279 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+06:52:14.277234 [debug] [ThreadPool]: Acquiring new clickhouse connection "list_schemas"
+06:52:14.282704 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:52:14.304599 [debug] [ThreadPool]: clickhouse adapter: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    select name from system.databases
+  ...
+06:52:14.311332 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:52:14.312746 [debug] [ThreadPool]: On list_schemas: Close
+06:52:14.313807 [debug] [ThreadPool]: Acquiring new clickhouse connection "list_None_homework_db"
+06:52:14.319178 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+06:52:14.329137 [debug] [ThreadPool]: clickhouse adapter: On list_None_homework_db: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "list_None_homework_db"} */
+select
+      null as db,
+      name as name,
+      database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type
+    from system.tables as t
+    where schema = 'homework_db'
+  ...
+06:52:14.332989 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.00 seconds
+06:52:14.334081 [debug] [ThreadPool]: On list_None_homework_db: Close
+06:52:14.334594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61723904-883d-451a-8037-7b397ed5daab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab95cf70>]}
+06:52:14.335113 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+06:52:14.335396 [info ] [MainThread]: 
+06:52:14.338587 [debug] [Thread-1  ]: Began running node model.dbt_starschema_2.lineorder_flat
+06:52:14.338899 [info ] [Thread-1  ]: 1 of 3 START incremental model homework_db.lineorder_flat ...................... [RUN]
+06:52:14.339344 [debug] [Thread-1  ]: Acquiring new clickhouse connection "model.dbt_starschema_2.lineorder_flat"
+06:52:14.339650 [debug] [Thread-1  ]: Began compiling node model.dbt_starschema_2.lineorder_flat
+06:52:14.339808 [debug] [Thread-1  ]: Compiling model.dbt_starschema_2.lineorder_flat
+06:52:14.348274 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+06:52:14.360034 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_customer
+        (
+                C_CUSTKEY       UInt32,
+                C_NAME          String,
+                C_ADDRESS       String,
+                C_CITY          LowCardinality(String),
+                C_NATION        LowCardinality(String),
+                C_REGION        LowCardinality(String),
+                C_PHONE         String,
+                C_MKTSEGMENT    LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/customer.tbl', 'CSV')
+        
+  ...
+06:52:14.373661 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:52:14.375013 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_lineorder
+        (
+            LO_ORDERKEY             UInt32,
+            LO_LINENUMBER           UInt8,
+            LO_CUSTKEY              UInt32,
+            LO_PARTKEY              UInt32,
+            LO_SUPPKEY              UInt32,
+            LO_ORDERDATE            Date,
+            LO_ORDERPRIORITY        LowCardinality(String),
+            LO_SHIPPRIORITY         UInt8,
+            LO_QUANTITY             UInt8,
+            LO_EXTENDEDPRICE        UInt32,
+            LO_ORDTOTALPRICE        UInt32,
+            LO_DISCOUNT             UInt8,
+            LO_REVENUE              UInt32,
+            LO_SUPPLYCOST           UInt32,
+            LO_TAX                  UInt8,
+            LO_COMMITDATE           Date,
+            LO_SHIPMODE             LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/lineorder.tbl', 'CSV')
+        
+  ...
+06:52:14.384093 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:52:14.385288 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_part
+        (
+                P_PARTKEY       UInt32,
+                P_NAME          String,
+                P_MFGR          LowCardinality(String),
+                P_CATEGORY      LowCardinality(String),
+                P_BRAND         LowCardinality(String),
+                P_COLOR         LowCardinality(String),
+                P_TYPE          LowCardinality(String),
+                P_SIZE          UInt8,
+                P_CONTAINER     LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/part.tbl', 'CSV')
+        
+  ...
+06:52:14.395474 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:52:14.396704 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_supplier
+        (
+                S_SUPPKEY       UInt32,
+                S_NAME          String,
+                S_ADDRESS       String,
+                S_CITY          LowCardinality(String),
+                S_NATION        LowCardinality(String),
+                S_REGION        LowCardinality(String),
+                S_PHONE         String
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/supplier.tbl', 'CSV')
+        
+  ...
+06:52:14.406346 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:52:14.420513 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_lineorder'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+06:52:14.426619 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:52:14.434220 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_customer'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+06:52:14.439957 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:52:14.445422 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_supplier'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+06:52:14.451010 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:52:14.456420 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_part'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+06:52:14.462164 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+06:52:14.465996 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_starschema_2.lineorder_flat"
+06:52:14.466428 [debug] [Thread-1  ]: finished collecting timing info
+06:52:14.466599 [debug] [Thread-1  ]: Began executing node model.dbt_starschema_2.lineorder_flat
+06:52:14.528502 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_starschema_2.lineorder_flat"
+06:52:14.529036 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+      
+
+  
+    create table homework_db.lineorder_flat
+    
+  
+    
+    engine = MergeTree()
+    order by (LO_ORDERDATE,LO_ORDERKEY)
+    
+    partition by (toYear(LO_ORDERDATE))
+  as (
+    
+
+    
+    
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+    SELECT
+      MD5(cast(coalesce(cast(LO_CUSTKEY as 
+    String
+), '') || '-' || coalesce(cast(C_CUSTKEY as 
+    String
+), '') || '-' || coalesce(cast(S_SUPPKEY as 
+    String
+), '') as 
+    String
+)) As Surrogate_key
+      ,"LO_ORDERKEY",
+  "LO_LINENUMBER",
+  "LO_CUSTKEY",
+  "LO_PARTKEY",
+  "LO_SUPPKEY",
+  "LO_ORDERDATE",
+  "LO_ORDERPRIORITY",
+  "LO_SHIPPRIORITY",
+  "LO_QUANTITY",
+  "LO_EXTENDEDPRICE",
+  "LO_ORDTOTALPRICE",
+  "LO_DISCOUNT",
+  "LO_REVENUE",
+  "LO_SUPPLYCOST",
+  "LO_TAX",
+  "LO_COMMITDATE",
+  "LO_SHIPMODE"
+      ,"C_CUSTKEY",
+  "C_NAME",
+  "C_ADDRESS",
+  "C_CITY",
+  "C_NATION",
+  "C_REGION",
+  "C_PHONE",
+  "C_MKTSEGMENT"
+      ,"S_SUPPKEY",
+  "S_NAME",
+  "S_ADDRESS",
+  "S_CITY",
+  "S_NATION",
+  "S_REGION",
+  "S_PHONE"
+      ,"P_PARTKEY",
+  "P_NAME",
+  "P_MFGR",
+  "P_CATEGORY",
+  "P_BRAND",
+  "P_COLOR",
+  "P_TYPE",
+  "P_SIZE",
+  "P_CONTAINER"
+  FROM homework_db.src_lineorder AS l
+  INNER JOIN homework_db.src_customer AS c ON c.C_CUSTKEY = l.LO_CUSTKEY
+  INNER JOIN homework_db.src_supplier AS s ON s.S_SUPPKEY = l.LO_SUPPKEY
+  INNER JOIN homework_db.src_part AS p ON p.P_PARTKEY = l.LO_PARTKEY
+  
+  )
+  ...
+06:57:14.670979 [debug] [Thread-1  ]: clickhouse adapter: Clickhouse error: :HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:8443 returned response code 500)
+ b'Code: 57. DB::Exception: Table homework_db.lineorder_flat already exists. (TABLE_ALREADY_EXISTS) (version 22.3.6.5 (official build))\n'
+06:57:14.671237 [debug] [Thread-1  ]: On model.dbt_starschema_2.lineorder_flat: Close
+06:57:14.671637 [debug] [Thread-1  ]: finished collecting timing info
+06:57:14.672006 [debug] [Thread-1  ]: Database Error in model lineorder_flat (models/lineorder_flat.sql)
+  :HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:8443 returned response code 500)
+   b'Code: 57. DB::Exception: Table homework_db.lineorder_flat already exists. (TABLE_ALREADY_EXISTS) (version 22.3.6.5 (official build))\n'
+  compiled SQL at target/run/dbt_starschema_2/models/lineorder_flat.sql
+06:57:14.672278 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61723904-883d-451a-8037-7b397ed5daab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab989d30>]}
+06:57:14.672634 [error] [Thread-1  ]: 1 of 3 ERROR creating incremental model homework_db.lineorder_flat ............. [[31mERROR[0m in 300.33s]
+06:57:14.673223 [debug] [Thread-1  ]: Finished running node model.dbt_starschema_2.lineorder_flat
+06:57:14.674132 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+06:57:14.674299 [info ] [Thread-1  ]: 2 of 3 SKIP test not_null_lineorder_flat_LO_CUSTKEY ............................ [[33mSKIP[0m]
+06:57:14.674760 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+06:57:14.674991 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+06:57:14.675235 [info ] [Thread-1  ]: 3 of 3 SKIP test not_null_lineorder_flat_LO_REVENUE ............................ [[33mSKIP[0m]
+06:57:14.675594 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+06:57:14.676671 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+06:57:14.677029 [info ] [MainThread]: 
+06:57:14.677271 [info ] [MainThread]: Finished running 1 incremental model, 2 tests in 300.40s.
+06:57:14.677480 [debug] [MainThread]: Connection 'master' was properly closed.
+06:57:14.677634 [debug] [MainThread]: Connection 'model.dbt_starschema_2.lineorder_flat' was properly closed.
+06:57:14.685709 [info ] [MainThread]: 
+06:57:14.686014 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+06:57:14.686353 [info ] [MainThread]: 
+06:57:14.686639 [error] [MainThread]: [33mDatabase Error in model lineorder_flat (models/lineorder_flat.sql)[0m
+06:57:14.686906 [error] [MainThread]:   :HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:8443 returned response code 500)
+06:57:14.687135 [error] [MainThread]:    b'Code: 57. DB::Exception: Table homework_db.lineorder_flat already exists. (TABLE_ALREADY_EXISTS) (version 22.3.6.5 (official build))\n'
+06:57:14.687387 [error] [MainThread]:   compiled SQL at target/run/dbt_starschema_2/models/lineorder_flat.sql
+06:57:14.687740 [info ] [MainThread]: 
+06:57:14.688000 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+06:57:14.688305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab9adf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab9c1310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8ab9c1220>]}
+
+
+============================== 2022-06-14 07:52:47.927675 | 32cbdea7-2a35-4df8-95e6-8fba85b44fd3 ==============================
+07:52:47.927690 [info ] [MainThread]: Running with dbt=1.1.0
+07:52:47.928039 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'clean', 'indirect_selection': 'eager'}
+07:52:47.928154 [debug] [MainThread]: Tracking: tracking
+07:52:47.936996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe50c21d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe50c219d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe50c2c580>]}
+07:52:47.938433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe50c2c580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe50c2c040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe50c2cb80>]}
+
+
+============================== 2022-06-14 07:54:22.832260 | 92bcad00-d852-4b88-8dc4-69e98dda779a ==============================
+07:54:22.832279 [info ] [MainThread]: Running with dbt=1.1.0
+07:54:22.832780 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+07:54:22.833027 [debug] [MainThread]: Tracking: tracking
+07:54:22.842124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a691eb820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a691eb880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a691eb8b0>]}
+07:54:22.865884 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+07:54:22.866213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '92bcad00-d852-4b88-8dc4-69e98dda779a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a6919cf40>]}
+07:54:22.883605 [debug] [MainThread]: Parsing macros/init_s3_source.sql
+07:54:22.887409 [debug] [MainThread]: Parsing macros/catalog.sql
+07:54:22.888874 [debug] [MainThread]: Parsing macros/adapters.sql
+07:54:22.922856 [debug] [MainThread]: Parsing macros/schema_tests/relationships.sql
+07:54:22.923837 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+07:54:22.949214 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+07:54:22.952998 [debug] [MainThread]: Parsing macros/materializations/test.sql
+07:54:22.954187 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+07:54:22.980791 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+07:54:22.983318 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+07:54:22.984781 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+07:54:22.986358 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+07:54:22.987711 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+07:54:22.988389 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+07:54:22.989172 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+07:54:22.989990 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+07:54:22.998276 [debug] [MainThread]: Parsing macros/etc/statement.sql
+07:54:23.002633 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+07:54:23.006877 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+07:54:23.009693 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+07:54:23.016729 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+07:54:23.019259 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+07:54:23.028171 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+07:54:23.037537 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+07:54:23.039728 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+07:54:23.043407 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+07:54:23.045611 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+07:54:23.061886 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+07:54:23.067883 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+07:54:23.069181 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+07:54:23.075825 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+07:54:23.078482 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+07:54:23.080715 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+07:54:23.083464 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+07:54:23.090831 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+07:54:23.092307 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+07:54:23.101836 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+07:54:23.116682 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+07:54:23.131335 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+07:54:23.135640 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+07:54:23.147410 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+07:54:23.157549 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+07:54:23.159160 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+07:54:23.174950 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+07:54:23.176706 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+07:54:23.180883 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+07:54:23.182741 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+07:54:23.185640 [debug] [MainThread]: Parsing macros/generate_model_yaml.sql
+07:54:23.188786 [debug] [MainThread]: Parsing macros/generate_source.sql
+07:54:23.195598 [debug] [MainThread]: Parsing macros/generate_base_model.sql
+07:54:23.198345 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
+07:54:23.199534 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
+07:54:23.200828 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
+07:54:23.206206 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
+07:54:23.209552 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
+07:54:23.219043 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
+07:54:23.223688 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
+07:54:23.224884 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
+07:54:23.226438 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
+07:54:23.227821 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
+07:54:23.228783 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
+07:54:23.230238 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
+07:54:23.232072 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
+07:54:23.234028 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
+07:54:23.235489 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+07:54:23.236458 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
+07:54:23.237557 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+07:54:23.238598 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+07:54:23.241828 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+07:54:23.243345 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
+07:54:23.246042 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
+07:54:23.246976 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
+07:54:23.249055 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+07:54:23.254574 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
+07:54:23.255844 [debug] [MainThread]: Parsing macros/cross_db_utils/listagg.sql
+07:54:23.264146 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
+07:54:23.265947 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+07:54:23.267175 [debug] [MainThread]: Parsing macros/generic_tests/test_unique_where.sql
+07:54:23.268586 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+07:54:23.269905 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+07:54:23.272679 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+07:54:23.274806 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+07:54:23.277222 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+07:54:23.281274 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+07:54:23.283276 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+07:54:23.284955 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+07:54:23.287041 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+07:54:23.288731 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+07:54:23.297313 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+07:54:23.299521 [debug] [MainThread]: Parsing macros/generic_tests/test_not_null_where.sql
+07:54:23.300966 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+07:54:23.303778 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+07:54:23.305496 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+07:54:23.307338 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+07:54:23.308602 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+07:54:23.309861 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+07:54:23.311032 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+07:54:23.312221 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+07:54:23.314547 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+07:54:23.316133 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+07:54:23.323907 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+07:54:23.329276 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+07:54:23.336006 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+07:54:23.337671 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+07:54:23.341088 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+07:54:23.342753 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+07:54:23.346868 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+07:54:23.352602 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+07:54:23.353981 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+07:54:23.359922 [debug] [MainThread]: Parsing macros/sql/star.sql
+07:54:23.363179 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+07:54:23.366511 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+07:54:23.369266 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+07:54:23.373590 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+07:54:23.375344 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+07:54:23.379475 [debug] [MainThread]: Parsing macros/sql/union.sql
+07:54:23.390002 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+07:54:23.393425 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+07:54:23.395087 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
+07:54:23.418898 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+07:54:23.420899 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+07:54:23.422542 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+07:54:23.782617 [debug] [MainThread]: 1603: static parser failed on lineorder_flat.sql
+07:54:23.839007 [debug] [MainThread]: 1602: parser fallback to jinja rendering on lineorder_flat.sql
+07:54:23.951564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '92bcad00-d852-4b88-8dc4-69e98dda779a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a691e87f0>]}
+07:54:23.960174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '92bcad00-d852-4b88-8dc4-69e98dda779a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a6919f0a0>]}
+07:54:23.960524 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 410 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+07:54:23.960797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92bcad00-d852-4b88-8dc4-69e98dda779a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a6919f100>]}
+07:54:23.962220 [info ] [MainThread]: 
+07:54:23.962763 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+07:54:23.963616 [debug] [ThreadPool]: Acquiring new clickhouse connection "list_schemas"
+07:54:23.969228 [debug] [ThreadPool]: Opening a new connection, currently in state init
+07:54:23.994735 [debug] [ThreadPool]: clickhouse adapter: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    select name from system.databases
+  ...
+07:54:23.997877 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.00 seconds
+07:54:23.999233 [debug] [ThreadPool]: On list_schemas: Close
+07:54:24.000312 [debug] [ThreadPool]: Acquiring new clickhouse connection "list_None_homework_db"
+07:54:24.005653 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+07:54:24.016078 [debug] [ThreadPool]: clickhouse adapter: On list_None_homework_db: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "list_None_homework_db"} */
+select
+      null as db,
+      name as name,
+      database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type
+    from system.tables as t
+    where schema = 'homework_db'
+  ...
+07:54:24.019795 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.00 seconds
+07:54:24.020802 [debug] [ThreadPool]: On list_None_homework_db: Close
+07:54:24.021301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92bcad00-d852-4b88-8dc4-69e98dda779a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a690b3fa0>]}
+07:54:24.021768 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+07:54:24.022032 [info ] [MainThread]: 
+07:54:24.024941 [debug] [Thread-1  ]: Began running node model.dbt_starschema_2.lineorder_flat
+07:54:24.025245 [info ] [Thread-1  ]: 1 of 3 START incremental model homework_db.lineorder_flat ...................... [RUN]
+07:54:24.025649 [debug] [Thread-1  ]: Acquiring new clickhouse connection "model.dbt_starschema_2.lineorder_flat"
+07:54:24.025932 [debug] [Thread-1  ]: Began compiling node model.dbt_starschema_2.lineorder_flat
+07:54:24.026082 [debug] [Thread-1  ]: Compiling model.dbt_starschema_2.lineorder_flat
+07:54:24.034130 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+07:54:24.043100 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_customer
+        (
+                C_CUSTKEY       UInt32,
+                C_NAME          String,
+                C_ADDRESS       String,
+                C_CITY          LowCardinality(String),
+                C_NATION        LowCardinality(String),
+                C_REGION        LowCardinality(String),
+                C_PHONE         String,
+                C_MKTSEGMENT    LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/customer.tbl', 'CSV')
+        
+  ...
+07:54:24.065208 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.02 seconds
+07:54:24.066556 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_lineorder
+        (
+            LO_ORDERKEY             UInt32,
+            LO_LINENUMBER           UInt8,
+            LO_CUSTKEY              UInt32,
+            LO_PARTKEY              UInt32,
+            LO_SUPPKEY              UInt32,
+            LO_ORDERDATE            Date,
+            LO_ORDERPRIORITY        LowCardinality(String),
+            LO_SHIPPRIORITY         UInt8,
+            LO_QUANTITY             UInt8,
+            LO_EXTENDEDPRICE        UInt32,
+            LO_ORDTOTALPRICE        UInt32,
+            LO_DISCOUNT             UInt8,
+            LO_REVENUE              UInt32,
+            LO_SUPPLYCOST           UInt32,
+            LO_TAX                  UInt8,
+            LO_COMMITDATE           Date,
+            LO_SHIPMODE             LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/lineorder.tbl', 'CSV')
+        
+  ...
+07:54:24.082787 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.02 seconds
+07:54:24.084018 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_part
+        (
+                P_PARTKEY       UInt32,
+                P_NAME          String,
+                P_MFGR          LowCardinality(String),
+                P_CATEGORY      LowCardinality(String),
+                P_BRAND         LowCardinality(String),
+                P_COLOR         LowCardinality(String),
+                P_TYPE          LowCardinality(String),
+                P_SIZE          UInt8,
+                P_CONTAINER     LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/part.tbl', 'CSV')
+        
+  ...
+07:54:24.099081 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+07:54:24.100317 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_supplier
+        (
+                S_SUPPKEY       UInt32,
+                S_NAME          String,
+                S_ADDRESS       String,
+                S_CITY          LowCardinality(String),
+                S_NATION        LowCardinality(String),
+                S_REGION        LowCardinality(String),
+                S_PHONE         String
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/supplier.tbl', 'CSV')
+        
+  ...
+07:54:24.117184 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.02 seconds
+07:54:24.131017 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_lineorder'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+07:54:24.137136 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+07:54:24.146057 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_customer'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+07:54:24.151582 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+07:54:24.157355 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_supplier'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+07:54:24.162769 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+07:54:24.168214 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_part'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+07:54:24.173496 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+07:54:24.177831 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_starschema_2.lineorder_flat"
+07:54:24.178241 [debug] [Thread-1  ]: finished collecting timing info
+07:54:24.178415 [debug] [Thread-1  ]: Began executing node model.dbt_starschema_2.lineorder_flat
+07:54:24.236182 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_starschema_2.lineorder_flat"
+07:54:24.236717 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+      
+
+  
+    create table homework_db.lineorder_flat
+    
+  
+    
+    engine = MergeTree()
+    order by (LO_ORDERDATE,LO_ORDERKEY)
+    
+    partition by (toYear(LO_ORDERDATE))
+  as (
+    
+
+    
+    
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+    SELECT
+      MD5(cast(coalesce(cast(LO_CUSTKEY as 
+    String
+), '') || '-' || coalesce(cast(C_CUSTKEY as 
+    String
+), '') || '-' || coalesce(cast(S_SUPPKEY as 
+    String
+), '') as 
+    String
+)) As Surrogate_key
+      ,"LO_ORDERKEY",
+  "LO_LINENUMBER",
+  "LO_CUSTKEY",
+  "LO_PARTKEY",
+  "LO_SUPPKEY",
+  "LO_ORDERDATE",
+  "LO_ORDERPRIORITY",
+  "LO_SHIPPRIORITY",
+  "LO_QUANTITY",
+  "LO_EXTENDEDPRICE",
+  "LO_ORDTOTALPRICE",
+  "LO_DISCOUNT",
+  "LO_REVENUE",
+  "LO_SUPPLYCOST",
+  "LO_TAX",
+  "LO_COMMITDATE",
+  "LO_SHIPMODE"
+      ,"C_CUSTKEY",
+  "C_NAME",
+  "C_ADDRESS",
+  "C_CITY",
+  "C_NATION",
+  "C_REGION",
+  "C_PHONE",
+  "C_MKTSEGMENT"
+      ,"S_SUPPKEY",
+  "S_NAME",
+  "S_ADDRESS",
+  "S_CITY",
+  "S_NATION",
+  "S_REGION",
+  "S_PHONE"
+      ,"P_PARTKEY",
+  "P_NAME",
+  "P_MFGR",
+  "P_CATEGORY",
+  "P_BRAND",
+  "P_COLOR",
+  "P_TYPE",
+  "P_SIZE",
+  "P_CONTAINER"
+  FROM homework_db.src_lineorder AS l
+  INNER JOIN homework_db.src_customer AS c ON c.C_CUSTKEY = l.LO_CUSTKEY
+  INNER JOIN homework_db.src_supplier AS s ON s.S_SUPPKEY = l.LO_SUPPKEY
+  INNER JOIN homework_db.src_part AS p ON p.P_PARTKEY = l.LO_PARTKEY
+  
+  )
+  ...
+07:59:24.281411 [debug] [Thread-1  ]: clickhouse adapter: Clickhouse error: :HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:8443 returned response code 500)
+ b'Code: 57. DB::Exception: Table homework_db.lineorder_flat already exists. (TABLE_ALREADY_EXISTS) (version 22.3.6.5 (official build))\n'
+07:59:24.281617 [debug] [Thread-1  ]: On model.dbt_starschema_2.lineorder_flat: Close
+07:59:24.281955 [debug] [Thread-1  ]: finished collecting timing info
+07:59:24.282359 [debug] [Thread-1  ]: Database Error in model lineorder_flat (models/lineorder_flat.sql)
+  :HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:8443 returned response code 500)
+   b'Code: 57. DB::Exception: Table homework_db.lineorder_flat already exists. (TABLE_ALREADY_EXISTS) (version 22.3.6.5 (official build))\n'
+  compiled SQL at target/run/dbt_starschema_2/models/lineorder_flat.sql
+07:59:24.282644 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92bcad00-d852-4b88-8dc4-69e98dda779a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a68fa3e20>]}
+07:59:24.282998 [error] [Thread-1  ]: 1 of 3 ERROR creating incremental model homework_db.lineorder_flat ............. [[31mERROR[0m in 300.26s]
+07:59:24.283526 [debug] [Thread-1  ]: Finished running node model.dbt_starschema_2.lineorder_flat
+07:59:24.284403 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+07:59:24.284631 [info ] [Thread-1  ]: 2 of 3 SKIP test not_null_lineorder_flat_LO_CUSTKEY ............................ [[33mSKIP[0m]
+07:59:24.285019 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+07:59:24.285180 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+07:59:24.285409 [info ] [Thread-1  ]: 3 of 3 SKIP test not_null_lineorder_flat_LO_REVENUE ............................ [[33mSKIP[0m]
+07:59:24.285729 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+07:59:24.286634 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+07:59:24.286978 [info ] [MainThread]: 
+07:59:24.287205 [info ] [MainThread]: Finished running 1 incremental model, 2 tests in 300.32s.
+07:59:24.287408 [debug] [MainThread]: Connection 'master' was properly closed.
+07:59:24.287557 [debug] [MainThread]: Connection 'model.dbt_starschema_2.lineorder_flat' was properly closed.
+07:59:24.295612 [info ] [MainThread]: 
+07:59:24.295844 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+07:59:24.296146 [info ] [MainThread]: 
+07:59:24.296413 [error] [MainThread]: [33mDatabase Error in model lineorder_flat (models/lineorder_flat.sql)[0m
+07:59:24.296684 [error] [MainThread]:   :HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:8443 returned response code 500)
+07:59:24.296933 [error] [MainThread]:    b'Code: 57. DB::Exception: Table homework_db.lineorder_flat already exists. (TABLE_ALREADY_EXISTS) (version 22.3.6.5 (official build))\n'
+07:59:24.297200 [error] [MainThread]:   compiled SQL at target/run/dbt_starschema_2/models/lineorder_flat.sql
+07:59:24.297473 [info ] [MainThread]: 
+07:59:24.297756 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+07:59:24.298183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a68f50f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a691e87f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a686b1d90>]}
+
+
+============================== 2022-06-14 08:17:53.167536 | 0467eda7-ec17-4ccd-9006-cbff98376485 ==============================
+08:17:53.167549 [info ] [MainThread]: Running with dbt=1.1.0
+08:17:53.167917 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'clean', 'indirect_selection': 'eager'}
+08:17:53.168048 [debug] [MainThread]: Tracking: tracking
+08:17:53.176806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efed496e4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efed496ea00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efed497a4c0>]}
+08:17:53.178336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efed497a490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efed497a370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efed497a4c0>]}
+
+
+============================== 2022-06-14 08:18:18.882652 | e72ad62e-9d19-4596-be20-c7c26b858daf ==============================
+08:18:18.882668 [info ] [MainThread]: Running with dbt=1.1.0
+08:18:18.883263 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+08:18:18.883500 [debug] [MainThread]: Tracking: tracking
+08:18:18.892394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b2234760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b22347c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b22347f0>]}
+08:18:18.916846 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+08:18:18.917173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e72ad62e-9d19-4596-be20-c7c26b858daf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b21ede80>]}
+08:18:18.934592 [debug] [MainThread]: Parsing macros/init_s3_source.sql
+08:18:18.938433 [debug] [MainThread]: Parsing macros/catalog.sql
+08:18:18.939906 [debug] [MainThread]: Parsing macros/adapters.sql
+08:18:18.973722 [debug] [MainThread]: Parsing macros/schema_tests/relationships.sql
+08:18:18.974701 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+08:18:18.998895 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+08:18:19.002534 [debug] [MainThread]: Parsing macros/materializations/test.sql
+08:18:19.003684 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+08:18:19.030389 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+08:18:19.032920 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+08:18:19.034377 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+08:18:19.035881 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+08:18:19.037166 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+08:18:19.037848 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+08:18:19.038616 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+08:18:19.039407 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+08:18:19.047596 [debug] [MainThread]: Parsing macros/etc/statement.sql
+08:18:19.051918 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+08:18:19.056116 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+08:18:19.058890 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+08:18:19.065909 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+08:18:19.068526 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+08:18:19.077847 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+08:18:19.087084 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+08:18:19.089202 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+08:18:19.092950 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+08:18:19.095271 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+08:18:19.111608 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+08:18:19.117629 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+08:18:19.118949 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+08:18:19.125802 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+08:18:19.128538 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+08:18:19.130842 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+08:18:19.133656 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+08:18:19.141099 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+08:18:19.142705 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+08:18:19.152598 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+08:18:19.168389 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+08:18:19.183290 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+08:18:19.187717 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+08:18:19.199885 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+08:18:19.210534 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+08:18:19.212185 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+08:18:19.228486 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+08:18:19.230315 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+08:18:19.234692 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+08:18:19.236463 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+08:18:19.239257 [debug] [MainThread]: Parsing macros/generate_model_yaml.sql
+08:18:19.242301 [debug] [MainThread]: Parsing macros/generate_source.sql
+08:18:19.249069 [debug] [MainThread]: Parsing macros/generate_base_model.sql
+08:18:19.251964 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
+08:18:19.253247 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
+08:18:19.254628 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
+08:18:19.260340 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
+08:18:19.263854 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
+08:18:19.275837 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
+08:18:19.282614 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
+08:18:19.283918 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
+08:18:19.285562 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
+08:18:19.287035 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
+08:18:19.288061 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
+08:18:19.289586 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
+08:18:19.291505 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
+08:18:19.293472 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
+08:18:19.295033 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+08:18:19.296009 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
+08:18:19.297155 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+08:18:19.298219 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+08:18:19.301520 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+08:18:19.303128 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
+08:18:19.305942 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
+08:18:19.306891 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
+08:18:19.309042 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+08:18:19.314803 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
+08:18:19.316113 [debug] [MainThread]: Parsing macros/cross_db_utils/listagg.sql
+08:18:19.324822 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
+08:18:19.326708 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+08:18:19.327991 [debug] [MainThread]: Parsing macros/generic_tests/test_unique_where.sql
+08:18:19.329515 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+08:18:19.330826 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+08:18:19.333638 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+08:18:19.335841 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+08:18:19.338311 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+08:18:19.342670 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+08:18:19.344663 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+08:18:19.346292 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+08:18:19.348359 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+08:18:19.349992 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+08:18:19.358499 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+08:18:19.360636 [debug] [MainThread]: Parsing macros/generic_tests/test_not_null_where.sql
+08:18:19.361999 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+08:18:19.364737 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+08:18:19.366435 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+08:18:19.368197 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+08:18:19.369462 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+08:18:19.370719 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+08:18:19.371833 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+08:18:19.372995 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+08:18:19.375258 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+08:18:19.376853 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+08:18:19.384860 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+08:18:19.390387 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+08:18:19.397089 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+08:18:19.398718 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+08:18:19.402088 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+08:18:19.403669 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+08:18:19.407894 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+08:18:19.413526 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+08:18:19.414885 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+08:18:19.420992 [debug] [MainThread]: Parsing macros/sql/star.sql
+08:18:19.424147 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+08:18:19.427365 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+08:18:19.429969 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+08:18:19.434324 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+08:18:19.435935 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+08:18:19.439955 [debug] [MainThread]: Parsing macros/sql/union.sql
+08:18:19.450565 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+08:18:19.453862 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+08:18:19.455469 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
+08:18:19.479408 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+08:18:19.481438 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+08:18:19.483014 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+08:18:19.848918 [debug] [MainThread]: 1603: static parser failed on lineorder_flat.sql
+08:18:19.907067 [debug] [MainThread]: 1602: parser fallback to jinja rendering on lineorder_flat.sql
+08:18:20.017198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e72ad62e-9d19-4596-be20-c7c26b858daf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b21da490>]}
+08:18:20.026556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e72ad62e-9d19-4596-be20-c7c26b858daf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b21f2070>]}
+08:18:20.026899 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 410 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+08:18:20.027145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e72ad62e-9d19-4596-be20-c7c26b858daf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b2276220>]}
+08:18:20.028549 [info ] [MainThread]: 
+08:18:20.029089 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+08:18:20.029965 [debug] [ThreadPool]: Acquiring new clickhouse connection "list_schemas"
+08:18:20.035460 [debug] [ThreadPool]: Opening a new connection, currently in state init
+08:18:20.063566 [debug] [ThreadPool]: clickhouse adapter: On list_schemas: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    select name from system.databases
+  ...
+08:18:20.066952 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:18:20.068303 [debug] [ThreadPool]: On list_schemas: Close
+08:18:20.069384 [debug] [ThreadPool]: Acquiring new clickhouse connection "list_None_homework_db"
+08:18:20.074717 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+08:18:20.084317 [debug] [ThreadPool]: clickhouse adapter: On list_None_homework_db: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "list_None_homework_db"} */
+select
+      null as db,
+      name as name,
+      database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type
+    from system.tables as t
+    where schema = 'homework_db'
+  ...
+08:18:20.090269 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.01 seconds
+08:18:20.091362 [debug] [ThreadPool]: On list_None_homework_db: Close
+08:18:20.091905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e72ad62e-9d19-4596-be20-c7c26b858daf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b21068b0>]}
+08:18:20.092378 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+08:18:20.092650 [info ] [MainThread]: 
+08:18:20.095786 [debug] [Thread-1  ]: Began running node model.dbt_starschema_2.lineorder_flat
+08:18:20.096089 [info ] [Thread-1  ]: 1 of 3 START incremental model homework_db.lineorder_flat ...................... [RUN]
+08:18:20.096524 [debug] [Thread-1  ]: Acquiring new clickhouse connection "model.dbt_starschema_2.lineorder_flat"
+08:18:20.096776 [debug] [Thread-1  ]: Began compiling node model.dbt_starschema_2.lineorder_flat
+08:18:20.096930 [debug] [Thread-1  ]: Compiling model.dbt_starschema_2.lineorder_flat
+08:18:20.105069 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+08:18:20.114277 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_customer
+        (
+                C_CUSTKEY       UInt32,
+                C_NAME          String,
+                C_ADDRESS       String,
+                C_CITY          LowCardinality(String),
+                C_NATION        LowCardinality(String),
+                C_REGION        LowCardinality(String),
+                C_PHONE         String,
+                C_MKTSEGMENT    LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/customer.tbl', 'CSV')
+        
+  ...
+08:18:20.137858 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.02 seconds
+08:18:20.139213 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_lineorder
+        (
+            LO_ORDERKEY             UInt32,
+            LO_LINENUMBER           UInt8,
+            LO_CUSTKEY              UInt32,
+            LO_PARTKEY              UInt32,
+            LO_SUPPKEY              UInt32,
+            LO_ORDERDATE            Date,
+            LO_ORDERPRIORITY        LowCardinality(String),
+            LO_SHIPPRIORITY         UInt8,
+            LO_QUANTITY             UInt8,
+            LO_EXTENDEDPRICE        UInt32,
+            LO_ORDTOTALPRICE        UInt32,
+            LO_DISCOUNT             UInt8,
+            LO_REVENUE              UInt32,
+            LO_SUPPLYCOST           UInt32,
+            LO_TAX                  UInt8,
+            LO_COMMITDATE           Date,
+            LO_SHIPMODE             LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/lineorder.tbl', 'CSV')
+        
+  ...
+08:18:20.157090 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.02 seconds
+08:18:20.158360 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_part
+        (
+                P_PARTKEY       UInt32,
+                P_NAME          String,
+                P_MFGR          LowCardinality(String),
+                P_CATEGORY      LowCardinality(String),
+                P_BRAND         LowCardinality(String),
+                P_COLOR         LowCardinality(String),
+                P_TYPE          LowCardinality(String),
+                P_SIZE          UInt8,
+                P_CONTAINER     LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/part.tbl', 'CSV')
+        
+  ...
+08:18:20.177283 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.02 seconds
+08:18:20.178529 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_supplier
+        (
+                S_SUPPKEY       UInt32,
+                S_NAME          String,
+                S_ADDRESS       String,
+                S_CITY          LowCardinality(String),
+                S_NATION        LowCardinality(String),
+                S_REGION        LowCardinality(String),
+                S_PHONE         String
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/supplier.tbl', 'CSV')
+        
+  ...
+08:18:20.191619 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+08:18:20.205443 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_lineorder'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+08:18:20.210428 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:18:20.219408 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_customer'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+08:18:20.223873 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:18:20.229923 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_supplier'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+08:18:20.234162 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:18:20.239983 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_part'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+08:18:20.244304 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:18:20.248874 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_starschema_2.lineorder_flat"
+08:18:20.249298 [debug] [Thread-1  ]: finished collecting timing info
+08:18:20.249480 [debug] [Thread-1  ]: Began executing node model.dbt_starschema_2.lineorder_flat
+08:18:20.311472 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_starschema_2.lineorder_flat"
+08:18:20.312043 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+      
+
+  
+    create table homework_db.lineorder_flat
+    
+  
+    
+    engine = MergeTree()
+    order by (LO_ORDERDATE,LO_ORDERKEY)
+    
+    partition by (toYear(LO_ORDERDATE))
+  as (
+    
+
+    
+    
+    
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+            
+        
+    
+        
+        
+    SELECT
+      MD5(cast(coalesce(cast(LO_CUSTKEY as 
+    String
+), '') || '-' || coalesce(cast(C_CUSTKEY as 
+    String
+), '') || '-' || coalesce(cast(S_SUPPKEY as 
+    String
+), '') as 
+    String
+)) As Surrogate_key
+      ,"LO_ORDERKEY",
+  "LO_LINENUMBER",
+  "LO_CUSTKEY",
+  "LO_PARTKEY",
+  "LO_SUPPKEY",
+  "LO_ORDERDATE",
+  "LO_ORDERPRIORITY",
+  "LO_SHIPPRIORITY",
+  "LO_QUANTITY",
+  "LO_EXTENDEDPRICE",
+  "LO_ORDTOTALPRICE",
+  "LO_DISCOUNT",
+  "LO_REVENUE",
+  "LO_SUPPLYCOST",
+  "LO_TAX",
+  "LO_COMMITDATE",
+  "LO_SHIPMODE"
+      ,"C_CUSTKEY",
+  "C_NAME",
+  "C_ADDRESS",
+  "C_CITY",
+  "C_NATION",
+  "C_REGION",
+  "C_PHONE",
+  "C_MKTSEGMENT"
+      ,"S_SUPPKEY",
+  "S_NAME",
+  "S_ADDRESS",
+  "S_CITY",
+  "S_NATION",
+  "S_REGION",
+  "S_PHONE"
+      ,"P_PARTKEY",
+  "P_NAME",
+  "P_MFGR",
+  "P_CATEGORY",
+  "P_BRAND",
+  "P_COLOR",
+  "P_TYPE",
+  "P_SIZE",
+  "P_CONTAINER"
+  FROM homework_db.src_lineorder AS l
+  INNER JOIN homework_db.src_customer AS c ON c.C_CUSTKEY = l.LO_CUSTKEY
+  INNER JOIN homework_db.src_supplier AS s ON s.S_SUPPKEY = l.LO_SUPPKEY
+  INNER JOIN homework_db.src_part AS p ON p.P_PARTKEY = l.LO_PARTKEY
+  
+  )
+  ...
+08:23:20.457314 [debug] [Thread-1  ]: clickhouse adapter: Clickhouse error: :HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:8443 returned response code 500)
+ b'Code: 57. DB::Exception: Table homework_db.lineorder_flat already exists. (TABLE_ALREADY_EXISTS) (version 22.3.6.5 (official build))\n'
+08:23:20.457532 [debug] [Thread-1  ]: On model.dbt_starschema_2.lineorder_flat: Close
+08:23:20.457881 [debug] [Thread-1  ]: finished collecting timing info
+08:23:20.458300 [debug] [Thread-1  ]: Database Error in model lineorder_flat (models/lineorder_flat.sql)
+  :HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:8443 returned response code 500)
+   b'Code: 57. DB::Exception: Table homework_db.lineorder_flat already exists. (TABLE_ALREADY_EXISTS) (version 22.3.6.5 (official build))\n'
+  compiled SQL at target/run/dbt_starschema_2/models/lineorder_flat.sql
+08:23:20.458574 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e72ad62e-9d19-4596-be20-c7c26b858daf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b214d820>]}
+08:23:20.458928 [error] [Thread-1  ]: 1 of 3 ERROR creating incremental model homework_db.lineorder_flat ............. [[31mERROR[0m in 300.36s]
+08:23:20.459475 [debug] [Thread-1  ]: Finished running node model.dbt_starschema_2.lineorder_flat
+08:23:20.460310 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:23:20.460523 [info ] [Thread-1  ]: 2 of 3 SKIP test not_null_lineorder_flat_LO_CUSTKEY ............................ [[33mSKIP[0m]
+08:23:20.460914 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:23:20.461114 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:23:20.461337 [info ] [Thread-1  ]: 3 of 3 SKIP test not_null_lineorder_flat_LO_REVENUE ............................ [[33mSKIP[0m]
+08:23:20.461643 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:23:20.462674 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+08:23:20.463085 [info ] [MainThread]: 
+08:23:20.463321 [info ] [MainThread]: Finished running 1 incremental model, 2 tests in 300.43s.
+08:23:20.463590 [debug] [MainThread]: Connection 'master' was properly closed.
+08:23:20.463746 [debug] [MainThread]: Connection 'model.dbt_starschema_2.lineorder_flat' was properly closed.
+08:23:20.471393 [info ] [MainThread]: 
+08:23:20.471631 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+08:23:20.471950 [info ] [MainThread]: 
+08:23:20.472220 [error] [MainThread]: [33mDatabase Error in model lineorder_flat (models/lineorder_flat.sql)[0m
+08:23:20.472475 [error] [MainThread]:   :HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:8443 returned response code 500)
+08:23:20.472726 [error] [MainThread]:    b'Code: 57. DB::Exception: Table homework_db.lineorder_flat already exists. (TABLE_ALREADY_EXISTS) (version 22.3.6.5 (official build))\n'
+08:23:20.472960 [error] [MainThread]:   compiled SQL at target/run/dbt_starschema_2/models/lineorder_flat.sql
+08:23:20.473211 [info ] [MainThread]: 
+08:23:20.473459 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+08:23:20.473833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b2261fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b22761c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15b2276370>]}
+
+
+============================== 2022-06-14 08:24:38.903178 | 162fef45-4fb7-48c6-90f6-9f96af4a14f5 ==============================
+08:24:38.903199 [info ] [MainThread]: Running with dbt=1.1.0
+08:24:38.903704 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'compile': True, 'which': 'generate', 'rpc_method': 'docs.generate', 'indirect_selection': 'eager'}
+08:24:38.903924 [debug] [MainThread]: Tracking: tracking
+08:24:38.913117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff00242e850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff00242e8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff00242e8e0>]}
+08:24:38.963779 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+08:24:38.964101 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+08:24:38.970320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '162fef45-4fb7-48c6-90f6-9f96af4a14f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff002270850>]}
+08:24:38.978607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '162fef45-4fb7-48c6-90f6-9f96af4a14f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff002255190>]}
+08:24:38.978927 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 410 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+08:24:38.979159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '162fef45-4fb7-48c6-90f6-9f96af4a14f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff002255400>]}
+08:24:38.980731 [info ] [MainThread]: 
+08:24:38.981340 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+08:24:38.982132 [debug] [ThreadPool]: Acquiring new clickhouse connection "list_None_homework_db"
+08:24:38.991903 [debug] [ThreadPool]: Opening a new connection, currently in state init
+08:24:39.025538 [debug] [ThreadPool]: clickhouse adapter: On list_None_homework_db: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "list_None_homework_db"} */
+select
+      null as db,
+      name as name,
+      database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type
+    from system.tables as t
+    where schema = 'homework_db'
+  ...
+08:24:39.030033 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:24:39.031473 [debug] [ThreadPool]: On list_None_homework_db: Close
+08:24:39.032137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '162fef45-4fb7-48c6-90f6-9f96af4a14f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0023e1190>]}
+08:24:39.032622 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+08:24:39.032902 [info ] [MainThread]: 
+08:24:39.036065 [debug] [Thread-1  ]: Began running node model.dbt_starschema_2.lineorder_flat
+08:24:39.036400 [debug] [Thread-1  ]: Acquiring new clickhouse connection "model.dbt_starschema_2.lineorder_flat"
+08:24:39.036632 [debug] [Thread-1  ]: Began compiling node model.dbt_starschema_2.lineorder_flat
+08:24:39.036775 [debug] [Thread-1  ]: Compiling model.dbt_starschema_2.lineorder_flat
+08:24:39.049117 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+08:24:39.059753 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_customer
+        (
+                C_CUSTKEY       UInt32,
+                C_NAME          String,
+                C_ADDRESS       String,
+                C_CITY          LowCardinality(String),
+                C_NATION        LowCardinality(String),
+                C_REGION        LowCardinality(String),
+                C_PHONE         String,
+                C_MKTSEGMENT    LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/customer.tbl', 'CSV')
+        
+  ...
+08:24:39.063518 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:24:39.064691 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_lineorder
+        (
+            LO_ORDERKEY             UInt32,
+            LO_LINENUMBER           UInt8,
+            LO_CUSTKEY              UInt32,
+            LO_PARTKEY              UInt32,
+            LO_SUPPKEY              UInt32,
+            LO_ORDERDATE            Date,
+            LO_ORDERPRIORITY        LowCardinality(String),
+            LO_SHIPPRIORITY         UInt8,
+            LO_QUANTITY             UInt8,
+            LO_EXTENDEDPRICE        UInt32,
+            LO_ORDTOTALPRICE        UInt32,
+            LO_DISCOUNT             UInt8,
+            LO_REVENUE              UInt32,
+            LO_SUPPLYCOST           UInt32,
+            LO_TAX                  UInt8,
+            LO_COMMITDATE           Date,
+            LO_SHIPMODE             LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/lineorder.tbl', 'CSV')
+        
+  ...
+08:24:39.067710 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:24:39.068785 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_part
+        (
+                P_PARTKEY       UInt32,
+                P_NAME          String,
+                P_MFGR          LowCardinality(String),
+                P_CATEGORY      LowCardinality(String),
+                P_BRAND         LowCardinality(String),
+                P_COLOR         LowCardinality(String),
+                P_TYPE          LowCardinality(String),
+                P_SIZE          UInt8,
+                P_CONTAINER     LowCardinality(String)
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/part.tbl', 'CSV')
+        
+  ...
+08:24:39.071882 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:24:39.073096 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    
+
+        CREATE TABLE IF NOT EXISTS homework_db.src_supplier
+        (
+                S_SUPPKEY       UInt32,
+                S_NAME          String,
+                S_ADDRESS       String,
+                S_CITY          LowCardinality(String),
+                S_NATION        LowCardinality(String),
+                S_REGION        LowCardinality(String),
+                S_PHONE         String
+        )
+        ENGINE = S3('https://storage.yandexcloud.net/otus-dwh/dbgen/supplier.tbl', 'CSV')
+        
+  ...
+08:24:39.076542 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:24:39.114393 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_lineorder'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+08:24:39.120071 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+08:24:39.129384 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_customer'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+08:24:39.133782 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:24:39.139474 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_supplier'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+08:24:39.144263 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:24:39.149869 [debug] [Thread-1  ]: clickhouse adapter: On model.dbt_starschema_2.lineorder_flat: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "model.dbt_starschema_2.lineorder_flat"} */
+
+    select
+      name,
+      type,
+      position
+    from system.columns
+    where
+      table = 'src_part'
+    
+      and database = 'homework_db'
+    
+    order by position
+  ...
+08:24:39.153891 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:24:39.165420 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_starschema_2.lineorder_flat"
+08:24:39.165847 [debug] [Thread-1  ]: finished collecting timing info
+08:24:39.166071 [debug] [Thread-1  ]: Began executing node model.dbt_starschema_2.lineorder_flat
+08:24:39.166237 [debug] [Thread-1  ]: finished collecting timing info
+08:24:39.166387 [debug] [Thread-1  ]: On model.dbt_starschema_2.lineorder_flat: Close
+08:24:39.166817 [debug] [Thread-1  ]: Finished running node model.dbt_starschema_2.lineorder_flat
+08:24:39.167546 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:24:39.167866 [debug] [Thread-1  ]: Acquiring new clickhouse connection "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"
+08:24:39.168082 [debug] [Thread-1  ]: Began compiling node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:24:39.168211 [debug] [Thread-1  ]: Compiling test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:24:39.179432 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"
+08:24:39.179820 [debug] [Thread-1  ]: finished collecting timing info
+08:24:39.179986 [debug] [Thread-1  ]: Began executing node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:24:39.180128 [debug] [Thread-1  ]: finished collecting timing info
+08:24:39.180520 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:24:39.180714 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:24:39.181263 [debug] [Thread-1  ]: Acquiring new clickhouse connection "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"
+08:24:39.181429 [debug] [Thread-1  ]: Began compiling node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:24:39.181567 [debug] [Thread-1  ]: Compiling test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:24:39.184744 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"
+08:24:39.185016 [debug] [Thread-1  ]: finished collecting timing info
+08:24:39.185161 [debug] [Thread-1  ]: Began executing node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:24:39.185303 [debug] [Thread-1  ]: finished collecting timing info
+08:24:39.185643 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:24:39.186391 [debug] [MainThread]: Connection 'master' was properly closed.
+08:24:39.186522 [debug] [MainThread]: Connection 'test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854' was properly closed.
+08:24:39.194511 [info ] [MainThread]: Done.
+08:24:39.253349 [debug] [MainThread]: Acquiring new clickhouse connection "generate_catalog"
+08:24:39.253585 [info ] [MainThread]: Building catalog
+08:24:39.255144 [debug] [ThreadPool]: Acquiring new clickhouse connection "homework_db"
+08:24:39.261200 [debug] [ThreadPool]: Opening a new connection, currently in state init
+08:24:39.279996 [debug] [ThreadPool]: clickhouse adapter: On homework_db: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "homework_db"} */
+select
+      null as table_database,
+      columns.database as table_schema,
+      columns.table as table_name,
+      if(tables.engine not in ('MaterializedView', 'View'), 'table', 'view') as table_type,
+      null as table_comment,
+      columns.name as column_name,
+      columns.position as column_index,
+      columns.type as column_type,
+      null as column_comment,
+      null as table_owner
+    from system.columns as columns
+    join system.tables as tables on tables.database = columns.database and tables.name = columns.table
+    where database != 'system' and
+    (columns.database = 'homework_db')
+    order by columns.database, columns.table, columns.position...
+08:24:39.288105 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.01 seconds
+08:24:39.296814 [debug] [ThreadPool]: On homework_db: Close
+08:24:39.308511 [info ] [MainThread]: Catalog written to /home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2/target/catalog.json
+08:24:39.308961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff00242e850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff00199bac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff00199baf0>]}
+08:24:39.792996 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+08:24:39.793529 [debug] [MainThread]: Connection 'homework_db' was properly closed.
+
+
+============================== 2022-06-14 08:28:45.239628 | 8e5639f5-8073-4b47-82e4-dc93d3e372ac ==============================
+08:28:45.239646 [info ] [MainThread]: Running with dbt=1.1.0
+08:28:45.240140 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+08:28:45.240341 [debug] [MainThread]: Tracking: tracking
+08:28:45.249261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad8ac7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad8ac850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad8ac880>]}
+08:28:45.298959 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+08:28:45.299198 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+08:28:45.305121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8e5639f5-8073-4b47-82e4-dc93d3e372ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad6f97c0>]}
+08:28:45.313533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8e5639f5-8073-4b47-82e4-dc93d3e372ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad6de100>]}
+08:28:45.313849 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 410 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+08:28:45.314119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e5639f5-8073-4b47-82e4-dc93d3e372ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad6de370>]}
+08:28:45.315588 [info ] [MainThread]: 
+08:28:45.316174 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+08:28:45.317112 [debug] [ThreadPool]: Acquiring new clickhouse connection "list_None_homework_db"
+08:28:45.326662 [debug] [ThreadPool]: Opening a new connection, currently in state init
+08:28:45.347341 [debug] [ThreadPool]: clickhouse adapter: On list_None_homework_db: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "connection_name": "list_None_homework_db"} */
+select
+      null as db,
+      name as name,
+      database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type
+    from system.tables as t
+    where schema = 'homework_db'
+  ...
+08:28:45.352153 [debug] [ThreadPool]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:28:45.353533 [debug] [ThreadPool]: On list_None_homework_db: Close
+08:28:45.354182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8e5639f5-8073-4b47-82e4-dc93d3e372ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad86a2e0>]}
+08:28:45.354648 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+08:28:45.354908 [info ] [MainThread]: 
+08:28:45.358045 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:28:45.358237 [info ] [Thread-1  ]: 1 of 2 START test not_null_lineorder_flat_LO_CUSTKEY ........................... [RUN]
+08:28:45.358671 [debug] [Thread-1  ]: Acquiring new clickhouse connection "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"
+08:28:45.358964 [debug] [Thread-1  ]: Began compiling node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:28:45.359123 [debug] [Thread-1  ]: Compiling test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:28:45.372073 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"
+08:28:45.372542 [debug] [Thread-1  ]: finished collecting timing info
+08:28:45.372768 [debug] [Thread-1  ]: Began executing node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:28:45.386517 [debug] [Thread-1  ]: Writing runtime SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"
+08:28:45.386984 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+08:28:45.396850 [debug] [Thread-1  ]: clickhouse adapter: On test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select LO_CUSTKEY
+from homework_db.lineorder_flat
+where LO_CUSTKEY is null
+
+
+
+      
+    ) as dbt_internal_test...
+08:28:45.402943 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+08:28:45.404729 [debug] [Thread-1  ]: finished collecting timing info
+08:28:45.404909 [debug] [Thread-1  ]: On test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647: Close
+08:28:45.405222 [info ] [Thread-1  ]: 1 of 2 PASS not_null_lineorder_flat_LO_CUSTKEY ................................. [[32mPASS[0m in 0.05s]
+08:28:45.405618 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_CUSTKEY.d7523fb647
+08:28:45.405855 [debug] [Thread-1  ]: Began running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:28:45.406142 [info ] [Thread-1  ]: 2 of 2 START test not_null_lineorder_flat_LO_REVENUE ........................... [RUN]
+08:28:45.406527 [debug] [Thread-1  ]: Acquiring new clickhouse connection "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"
+08:28:45.406704 [debug] [Thread-1  ]: Began compiling node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:28:45.406840 [debug] [Thread-1  ]: Compiling test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:28:45.410626 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"
+08:28:45.410959 [debug] [Thread-1  ]: finished collecting timing info
+08:28:45.411107 [debug] [Thread-1  ]: Began executing node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:28:45.413543 [debug] [Thread-1  ]: Writing runtime SQL for node "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"
+08:28:45.413848 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+08:28:45.422665 [debug] [Thread-1  ]: clickhouse adapter: On test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "clickhouse_starschema", "target_name": "dev", "node_id": "test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select LO_REVENUE
+from homework_db.lineorder_flat
+where LO_REVENUE is null
+
+
+
+      
+    ) as dbt_internal_test...
+08:28:45.428763 [debug] [Thread-1  ]: clickhouse adapter: SQL status: OK in 0.01 seconds
+08:28:45.430000 [debug] [Thread-1  ]: finished collecting timing info
+08:28:45.430181 [debug] [Thread-1  ]: On test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854: Close
+08:28:45.430498 [info ] [Thread-1  ]: 2 of 2 PASS not_null_lineorder_flat_LO_REVENUE ................................. [[32mPASS[0m in 0.02s]
+08:28:45.430871 [debug] [Thread-1  ]: Finished running node test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854
+08:28:45.431901 [debug] [MainThread]: Acquiring new clickhouse connection "master"
+08:28:45.432235 [info ] [MainThread]: 
+08:28:45.432540 [info ] [MainThread]: Finished running 2 tests in 0.12s.
+08:28:45.432831 [debug] [MainThread]: Connection 'master' was properly closed.
+08:28:45.432992 [debug] [MainThread]: Connection 'test.dbt_starschema_2.not_null_lineorder_flat_LO_REVENUE.95f13c3854' was properly closed.
+08:28:45.441182 [info ] [MainThread]: 
+08:28:45.441436 [info ] [MainThread]: [32mCompleted successfully[0m
+08:28:45.441787 [info ] [MainThread]: 
+08:28:45.442056 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+08:28:45.442442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad6d7f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad6de430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32ad6de460>]}
+
+
+============================== 2022-06-14 08:38:14.488126 | 5daaa0d8-95a5-4767-be25-592b0bb43919 ==============================
+08:38:14.488139 [info ] [MainThread]: Running with dbt=1.1.0
+08:38:14.488555 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+08:38:14.488732 [debug] [MainThread]: Tracking: tracking
+08:38:14.497830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0bc95ceb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0bc95cdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0bc95ce20>]}
+08:38:14.557014 [debug] [MainThread]: Executing "git --help"
+08:38:14.560739 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+08:38:14.561100 [debug] [MainThread]: STDERR: "b''"
+08:38:14.563922 [debug] [MainThread]: Acquiring new clickhouse connection "debug"
+08:38:14.564322 [debug] [MainThread]: Opening a new connection, currently in state init
+08:38:14.598793 [debug] [MainThread]: clickhouse adapter: Got an error when attempting to open a clickhouse connection: ':HTTPDriver url https://c-c9q06q78m45per350pr9.rw.mdb.yandexcloud.net:9440 returned response code 400)
+ b'Port 9000 is for clickhouse-client program\r\nYou must use port 8123 for HTTP.\r\n''
+08:38:14.599177 [debug] [MainThread]: On debug: No close available on handle
+08:38:14.599591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0bc881f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0bc895f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0bc840040>]}
+08:38:15.138595 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-06-14 08:38:40.210482 | abbc6e60-e618-4d4b-846c-e58c9f3c569a ==============================
+08:38:40.210494 [info ] [MainThread]: Running with dbt=1.1.0
+08:38:40.210872 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/ivan-ds/otus_homework_2/dbt_starschema_2/dbt_starschema_2', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+08:38:40.211049 [debug] [MainThread]: Tracking: tracking
+08:38:40.220144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7a6b55fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7a6b55ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7a6b55dc0>]}
+08:38:40.277801 [debug] [MainThread]: Executing "git --help"
+08:38:40.281325 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+08:38:40.281672 [debug] [MainThread]: STDERR: "b''"
+08:38:40.284536 [debug] [MainThread]: Acquiring new clickhouse connection "debug"
+08:38:40.284898 [debug] [MainThread]: Opening a new connection, currently in state init
+08:38:40.305840 [debug] [MainThread]: clickhouse adapter: On debug: select 1 as id...
+08:38:40.308960 [debug] [MainThread]: clickhouse adapter: SQL status: OK in 0.00 seconds
+08:38:40.309997 [debug] [MainThread]: On debug: Close
+08:38:40.310323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7a6a84e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7a6a361f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7a6a36100>]}
+08:38:40.798918 [debug] [MainThread]: Connection 'debug' was properly closed.

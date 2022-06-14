@@ -3,7 +3,8 @@
       engine='MergeTree()',
       order_by=['LO_ORDERDATE', 'LO_ORDERKEY'],
       partition_by='toYear(LO_ORDERDATE)',
-      materialized='incremental'
+      materialized='incremental',
+      inserts_only=True
     )
 -}}
 
